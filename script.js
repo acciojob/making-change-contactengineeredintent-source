@@ -1,15 +1,6 @@
 const makeChange = (c) => {
   // your name here
-	let obj = {
-        constructor(q, d, n, p ){
-            this.q = q;
-            this.d = d;
-            this.n = n;
-            this.p = p;
-        }
-    }
-    
-    let q_count = 0;
+	let q_count = 0;
     let d_count = 0;
     let n_count = 0;
     let p_count = 0;
@@ -46,8 +37,13 @@ const makeChange = (c) => {
     }
     
     // console.log(`q = ${q_count}, d = ${d_count}, n = ${n_count}, p = ${p_count}`);
-    obj.constructor(q_count, d_count, n_count, p_count);
-    return obj;
+    const obj = {
+		 q: q_count, 
+		 d: d_count, 
+		 n: n_count,
+		 p: p_count);
+    }
+	return obj;
 };
 
 // Do not the change the code below
